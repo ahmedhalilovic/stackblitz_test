@@ -7,7 +7,7 @@ import ShowAlert from '../testing/Box4';
 import UsingFetch from '../testing/Box5';
 import PutRequest from '../testing/Box6';
 import BeforeHooks from '../testing/Box8';
-//import Example from '../testing/Box9';
+import FavouriteColor from '../testing/Box9';
 
 export default function App() {
   return (
@@ -20,7 +20,7 @@ export default function App() {
       <UsingFetch />
       <PutRequest />
       <BeforeHooks />
-      
+      <FavouriteColor />
     </div>
   );
 }

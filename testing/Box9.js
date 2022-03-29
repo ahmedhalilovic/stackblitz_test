@@ -1,17 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-function Example() {
-  const [count, setCount] = useState;
-  useEffect(() => {
-    document.title = 'You clicked ${count} times';
-  });
+function FavouriteColor() {
+  const [color, setColor] = useState('...');
 
   return (
-    <div>
-      <p>You clicked {count} times.</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
+    <>
+      <h3>My favourite color is {color}!</h3>
+      <button
+        style={{ color: 'blue' }}
+        type="button"
+        onClick={() => setColor('blue')}
+      >
+        Blue
+      </button>
+      <button
+        style={{ color: 'green' }}
+        type="button"
+        onClick={() => setColor('green')}
+      >
+        Green
+      </button>
+      <button
+        style={{ backgroundColor: 'red' }}
+        type="button"
+        onClick={() => setColor('red')}
+      >
+        Red
+      </button>
+    </>
   );
 }
 
-export default Example;
+export default FavouriteColor;

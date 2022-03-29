@@ -18,7 +18,7 @@ class BeforeHooks extends React.Component {
   render() {
     return (
       <div>
-        <p>You clicked {this.state.count} times</p>
+        <p style={{ color: 'red' }}>You clicked {this.state.count} times</p>
         <button onClick={() => this.setState({ count: this.state.count + 1 })}>
           Click me!
         </button>
