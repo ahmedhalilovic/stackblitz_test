@@ -8,6 +8,8 @@ import UsingFetch from '../testing/Box5';
 import PutRequest from '../testing/Box6';
 import BeforeHooks from '../testing/Box8';
 import FavouriteColor from '../testing/Box9';
+import Timer from '../testing/Box10';
+//import Timer from '../testing/Box10';
 
 export default function App() {
   return (
@@ -21,6 +23,7 @@ export default function App() {
       <PutRequest />
       <BeforeHooks />
       <FavouriteColor />
+      <Timer />
     </div>
   );
 }
