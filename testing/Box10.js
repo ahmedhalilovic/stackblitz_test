@@ -7,7 +7,7 @@ function Timer() {
     setTimeout(() => {
       setCount((count) => count + 1);
     }, 500);
-  });
+  }, []);
 
   return <h1>I've rendered {count} times.</h1>;
 }
